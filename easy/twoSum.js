@@ -10,10 +10,10 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 
 function twoSum(arr, target) {
-  let map = {};
+  const map = {};
   for (let i = 0; i < arr.length; i++) {
     const currentVal = arr[i];
-    let required = target - currentVal;
+    const required = target - currentVal;
     if (map[required] !== undefined) return [map[required], i];
     else map[currentVal] = i;
   }
